@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.toumin {
+  opacity: 0.8;
+}
+
+.toumin:hover {
+  opacity: 1;
+}
+
+.box {
+  width: 100%;
+  height: calc(100vh);
+  background: #000;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+
+.header .left {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin: auto 20px;
+  width: 80px;
+  height: 26px;
+  background: url("../img/logo.png") no-repeat center center;
+  background-size: contain;
+  opacity: 0.5;
+}
+
+.header .left:hover {
+  opacity: 1;
+}
+
+.header .right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
+  margin: auto 20px;
+  height: 15px;
+  line-height: 15px;
+  text-align: right;
+  padding-right: 28px;
+  font-size: 14px;
+}
+
+.header .right a {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.header .right a:hover {
+  opacity: 1;
+}
+
+.play-list {
+  padding-top: 20px;
+  width: 80%;
+  min-width: 815px;
+  height: calc(85vh - 60px);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.play-list .list-left {
+  float: left;
+  overflow: auto;
+}
+
+.play-list .list-left .play-left-top {
+  margin-bottom: 20px;
+}
+
+.play-list .list-left .play-left-top a {
+  display: inline-block;
+  width: 118px;
+  height: 25px;
+  padding-top: 9px;
+  background: red;
+  text-align: center;
+}
+
+.play-list .list-left .play-left-top a i {
+  margin-top: 9px;
+  height: 100%;
+  line-height: 100%;
+  font-style: normal;
+}
+
+.play-list .list-right {
+  float: right;
+  width: 300px;
+  height: 100%;
+}
+
+.play-list .list-right .artistan {
+  width: 300px;
+  height: 285px;
+  overflow: hidden;
+}
+
+.play-list .list-right .artistan .center1 {
+  margin-top: 15px;
+}
+
+.play-list .list-right .artistan .center {
+  text-align: center;
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.play-list .list-right .artistan .player {
+  width: 201px;
+  height: 186px;
+  background: url(../img/playerbj.png) no-repeat;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.play-list .list-right .artistan .player img {
+  width: 186px;
+  height: 186px;
+}
+
+.play-box {
+  width: 80%;
+  min-width: 815px;
+  height: 15%;
+  min-height: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+}
+
+.play-box .play-contor {
+  float: left;
+  width: 170px;
+  height: 100%;
+  position: relative;
+}
+
+.play-box .play-contor .prev {
+  width: 19px;
+  height: 20px;
+  background: url(../img/player.png) 0 -30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.play-box .play-contor .flag {
+  width: 21px;
+  height: 29px;
+  background: url(../img/player.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.play-box .play-contor .flag.inplay {
+  background-position: -29px 0;
+}
+
+.play-box .play-contor .next {
+  width: 19px;
+  height: 20px;
+  background: url(../img/player.png) 0 -52px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
+}
+
+.play-box .play-jindu {
+  position: absolute;
+  left: 200px;
+  right: 390px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.play-box .play-jindu .play-jindu-left {
+  float: left;
+}
+
+.play-box .play-jindu .play-jindu-right {
+  float: right;
+}
+
+.play-box .play-jindu .play-jindu-right div {
+  float: left;
+}
+
+.play-box .play-jindu .jindu {
+  width: 100%;
+  height: 2px;
+  padding: 5px 0;
+  background: rgba(255, 255, 255, 0.5);
+  background-clip: content-box;
+  position: absolute;
+  bottom: 0;
+  border-radius: 1px;
+}
+
+.play-box .play-jindu .jindu .jindu1 {
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+  border-radius: 1px;
+}
+
+.play-box .play-jindu .jindu .yuan {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+.play-box .play-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
+  width: 360px;
+  height: 26px;
+}
+
+.play-right {
+  text-align: justify;
+}
+
+.play-right::after {
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  background: #555;
+  content: "";
+}
+
+.play-right .xunhuan {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background: url(../img/player.png);
+  background-position: 0 -205px;
+}
+
+.play-right .xihuan {
+  display: inline-block;
+  width: 23px;
+  height: 26px;
+  background: #ccc;
+  background: url(../img/player.png);
+  background-position: 0 -94px;
+}
+
+.play-right .xiazai {
+  display: inline-block;
+  width: 22px;
+  height: 26px;
+  background: #ccc;
+  background: url(../img/player.png);
+  background-position: 0 -118px;
+}
+
+.play-right .chunjing {
+  display: inline-block;
+  width: 74px;
+  height: 26px;
+  background: #ccc;
+  background: url(../img/player.png);
+  background-position: 0 -282px;
+}
+
+.play-right .yinliang {
+  display: inline-block;
+  width: 116px;
+  height: 26px;
+}
+
+.play-right .yinliang .jinyin {
+  width: 26px;
+  height: 21px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: url(../img/player.png);
+  background-position: 0 -144px;
+}
+
+.play-right .yinliang .jinyin.injinyin {
+  background-position: 0 -182px;
+}
+
+.play-right .yinliangzs {
+  width: 75px;
+  padding: 5px 0;
+  height: 2px;
+  border-radius: 1px;
+  background: rgba(255, 255, 255, 0.5);
+  background-clip: content-box;
+  opacity: 0.8;
+  right: 5px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.play-right .yinliangzs .yinliang1 {
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background: #fff;
+}
+
+.play-right .yinliangzs .yuan {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 75px;
+  background: #fff;
+}
+
+table {
+  float: left;
+}
+
+tr {
+  height: 50px;
+}
+
+td {
+  padding: 0 10px;
+  opacity: 0.5;
+  border-bottom: 1px solid #fff;
+}

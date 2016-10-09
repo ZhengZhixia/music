@@ -1,0 +1,302 @@
+@import "mixins";
+*{
+ margin:0;
+ padding:0;
+ list-style:none;
+ color:#fff;
+}
+a{
+  text-decoration:none;	
+  
+}
+.toumin{
+	opacity:0.8;
+    &:hover{
+    opacity:1
+    }
+}
+.box{
+	width:100%;
+	height:calc(100vh);
+	background:#000;
+}
+.header{
+	width:100%;
+	height:60px;
+	//background:blue;
+    position:relative;
+	.left{
+	@include shangxia();
+	margin:auto 20px;
+	width:80px;
+	height:26px;
+	background:url("../img/logo.png") no-repeat center center;
+	background-size:contain;
+	opacity:0.5;
+    &:hover{
+    opacity:1;
+    }
+	}
+	.right{
+	@include shangxia();
+	right:0;
+	margin:auto 20px;   
+    height:15px;
+    line-height:15px;
+    text-align: right;
+    padding-right: 28px;
+    font-size: 14px;
+    a{
+    width:100%;
+    height:100%;
+    color:#fff;
+    opacity:0.5;
+    &:hover{
+    opacity:1;
+    }
+    text-decoration: none;
+    }
+	}
+}
+.play-list{
+    padding-top:20px;
+	width:80%;
+	min-width:815px;
+	height: calc(85vh - 60px);;
+	//background:yellow;
+	@include zuoyou();
+	.list-left{
+	float:left;
+	overflow:auto;
+	.play-left-top{
+	margin-bottom:20px;
+	a{
+	display:inline-block;
+	width:118px;
+	height:25px;
+	padding-top:9px;
+	background:red;
+	text-align:center;
+	i{
+	margin-top:9px;
+    height:100%;
+    line-height:100%;
+    font-style:normal;
+	}
+	}
+	}
+	}
+	.list-right{
+	float:right;
+	width:300px;
+	height:100%;
+	//background:green;
+	.artistan{
+	width:300px;
+	height:285px;
+	overflow:hidden;
+	//background:pink;
+	.center1{
+	margin-top:15px;
+	}
+	.center{
+	text-align:center;	
+	height:28px;
+	line-height:28px;
+	font-size:14px;
+	}
+	.player{
+	width:201px;
+	height:186px;
+	background:url(../img/playerbj.png) no-repeat ;
+	position:relative;
+	left:0;
+	right:0;
+	margin:auto;
+	img{
+	width:186px;
+	height:186px;
+	}
+	}
+	}
+	}
+}
+.play-box{
+	width:80%;
+	min-width: 815px;
+	height:15%;
+	min-height:50px;
+	//background: pink;
+	@include zuoyou();
+	bottom:0;
+	.play-contor{
+	float:left;
+	width:170px;
+	height:100%;
+	//background:blue;
+	position:relative;
+	.prev{
+	width:19px;
+	height:20px;
+	background:url(../img/player.png) 0 -30px;
+	@include shangxia();
+	}
+	.flag{
+	width:21px;
+	height:29px;
+	background:url(../img/player.png);
+	@include juzhong();
+	&.inplay{
+	background-position:-29px 0;
+	}
+	}
+	.next{
+	width:19px;
+	height:20px;
+	background:url(../img/player.png) 0 -52px;
+	@include shangxia();
+	right:0;
+	}
+	}
+	.play-jindu{
+     position:absolute;
+     left:200px;
+     right:390px;
+     //background:green;
+     height:30px;
+     @include shangxia();
+     .play-jindu-left{
+     float:left;
+     }
+     .play-jindu-right{
+     float:right;
+     div{
+     float:left;
+     }
+     }
+     .jindu{
+       width:100%;
+       height:2px;
+       padding:5px 0;
+       background:rgba(255,255,255,0.5);
+       background-clip:content-box;
+       position:absolute;
+       bottom:0;
+       border-radius:1px;
+       .play-jindu-left{
+
+       }
+       .jindu1{        
+       width:100px;
+       height:2px;
+       @include shangxia();
+       background:#fff;
+       border-radius:1px;
+       }
+       .yuan{
+       @include yuan(10px);
+       @include shangxia();
+       background:#fff;
+       }
+     }
+	}
+	.play-right{
+	@include shangxia();
+	right:0;
+	width:360px;
+	height:26px;
+	//background:blue;
+	}
+}
+.play-right{
+    text-align:justify;
+    &::after{
+    display:inline-block;
+    width:100%;
+    height:0;
+    background:#555;
+    content:"";
+    }
+	.xunhuan{
+	display:inline-block;
+	width:26px;
+	height:26px;
+	background:url(../img/player.png) ;
+	background-position:0 -205px;
+	}
+	.xihuan{
+	display:inline-block;
+	width:23px;
+	height:26px;
+	background:#ccc;
+	background:url(../img/player.png) ;
+	background-position:0 -94px;
+	}
+	.xiazai{
+	display:inline-block;
+	width:22px;
+	height:26px;
+	background:#ccc;
+	background:url(../img/player.png) ;
+	background-position:0 -118px;
+	}
+	.chunjing{
+	display:inline-block;
+	width:74px;
+	height:26px;
+	background:#ccc;
+	background:url(../img/player.png) ;
+	background-position:0 -282px;
+	}
+	.yinliang{
+	display:inline-block;
+	width:116px;
+	height:26px;
+	.jinyin{
+	width:26px;
+	height:21px;
+	@include shangxia();
+	background:url(../img/player.png) ;
+	background-position:0 -144px;
+	&.injinyin{
+	background-position:0 -182px;
+	}
+	}
+	}
+	.yinliangzs{
+	width:75px;
+	padding:5px 0;
+	height:2px;
+	border-radius:1px;
+	background:rgba(255,255,255,0.5);
+	background-clip:content-box;
+	opacity:0.8;
+	right:5px;
+	@include shangxia();
+	.yinliang1{
+	width:100%;
+	height:2px;
+	border-radius:1px;
+	background:#fff;
+	}
+	.yuan{
+	@include yuan(10px);
+	@include shangxia();
+	left:75px;
+	background:#fff;
+	}
+	}
+}
+table{
+	float:left;
+}
+tr{
+	height:50px;
+	
+	
+}
+td{
+	padding:0 10px;
+    opacity:0.5;
+	border-bottom:1px solid #fff;
+}
